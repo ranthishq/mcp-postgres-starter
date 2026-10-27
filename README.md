@@ -54,9 +54,10 @@ claude --mcp-config mcp.json --allowedTools "mcp__store__*"
 ```
 
 **Claude Desktop / claude.ai (custom connector)** need a public **HTTPS** URL: put the server behind a reverse proxy
-(Caddy, nginx, Cloudflare Tunnel) and set `MCP_PUBLIC_URL=https://your-host`. Web connectors that sign users in
-with OAuth need an OAuth-issuing verifier instead of the static one (see "Auth" below); only the Claude Code setup
-above was tested for this README.
+(Caddy, nginx, Cloudflare Tunnel) and set `MCP_PUBLIC_URL=https://your-host`. Per Claude's custom connector docs
+a connector can send a fixed request header (use `Authorization: Bearer <token>`), or sign users in with OAuth — for
+OAuth, swap the static verifier for one that checks your identity provider's tokens (see "How it is built"). Only
+the Claude Code setup above was tested for this README.
 
 ## How it is built
 
