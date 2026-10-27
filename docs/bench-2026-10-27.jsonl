@@ -1,0 +1,5 @@
+{"tool": "search_products", "runs": 30, "median_ms": 3.6, "p90_ms": 5.4}
+{"tool": "low_stock", "runs": 30, "median_ms": 3.9, "p90_ms": 4.7}
+{"tool": "sales_summary", "runs": 30, "median_ms": 5.3, "p90_ms": 6.4}
+{"tool": "find_orders", "runs": 30, "median_ms": 6.9, "p90_ms": 7.4}
+{"tool": "overdue_orders", "runs": 30, "median_ms": 5.2, "p90_ms": 6.3}
